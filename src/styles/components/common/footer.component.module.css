@@ -1,0 +1,15 @@
+.footer {
+    padding: 15px;
+    background: #1c1c1c;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer .created-by {
+    font-family: "Rubik";
+    color: #fff;
+}

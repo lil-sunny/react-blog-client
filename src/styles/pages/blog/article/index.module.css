@@ -1,0 +1,307 @@
+.content {
+  display: flex;
+}
+
+.author-info {
+  font-family: "Rubik", sans-serif;
+  max-width: 260px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f9f9f9;
+  box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.07);
+}
+
+.author-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: inherit;
+  height: 100vh;
+  padding: 15px;
+}
+
+.author-info .avatar {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #6fcf15;
+  margin: 0 auto;
+}
+
+.username {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 10px 0;
+  color: #000;
+}
+
+.name-surname {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 7px 0;
+  color: #000;
+}
+
+.name-surname span:first-child {
+  margin-right: 3px;
+}
+
+.email {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #bdbdbd;
+}
+
+.timestamps-wrapper {
+  text-align: left;
+  width: 100%;
+}
+
+.timestamp {
+  margin: 10px 0;
+}
+
+.timestamp .title {
+  font-size: 14px;
+  color: #bdbdbd;
+  margin-bottom: 10px;
+}
+
+.timestamp .time {
+  font-size: 14px;
+  color: #000;
+}
+
+.article {
+  background: #fff;
+}
+
+.article .article-content {
+  padding: 20px;
+}
+
+.article .title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #000;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.article .preview-image {
+  position: relative;
+  overflow: hidden;
+  max-height: 270px;
+  background: #6dc509;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article .preview-image img {
+  width: 100%;
+}
+
+.article .breadcrumps {
+  font-size: 14px;
+  color: #c5c5c5;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.subtitle {
+  text-align: left;
+  color: #000;
+  font-weight: 600;
+  font-size: 21px;
+}
+
+.paragraph {
+  text-align: left;
+  color: #000;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.75em;
+  margin: 15px 0;
+}
+
+.link {
+  color: #095ac5;
+  text-decoration: none;
+}
+
+/* comment */
+.comments-wrapper {
+  background: #FCFCFC;
+  padding: 20px;
+}
+
+.comment-wrapper {
+  display: flex;
+  margin: 10px 0;
+}
+
+.comment-wrapper .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #0022b9;
+}
+
+.comment {
+  background: #fff;
+  box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.1);
+  padding: 7px 10px;
+  border-radius: 8px;
+  font-size: "Rubik", sans-serif;
+  flex: 1;
+  margin-left: 10px;
+}
+
+.comment .username {
+  margin: 0;
+  font-size: 16px;
+  color: #0022b9;
+  margin-bottom: 10px;
+}
+
+.comment .reply-on {
+  font-size: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+}
+
+.action-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.action-wrapper .reply-btn {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  margin: 0 10px;
+  color: #c5c5c5;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #4b4b4b;
+}
+
+.likes .value {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.top-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.bottom-side {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.btn-wrapper {
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .author-info {
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: none;
+  }
+
+  .author-content {
+    position: static;
+    margin-top: 0;
+  }
+
+  .avatar {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .name-surname {
+    font-size: 1.2rem;
+  }
+
+  .email {
+    font-size: 0.8rem;
+  }
+
+  .timestamps-wrapper {
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .timestamp {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    font-size: 0.8rem;
+  }
+
+  .time {
+    font-size: 0.8rem;
+  }
+
+  .article {
+    padding: 10px;
+  }
+
+  .breadcrumps {
+    font-size: 0.8rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .preview-image {
+    margin-bottom: 20px;
+  }
+
+  .paragraph {
+    font-size: 0.9rem;
+  }
+
+  .comment-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .message {
+    font-size: 0.9rem;
+  }
+
+  .reply-btn {
+    font-size: 0.9rem;
+  }
+
+  .likes-count {
+    font-size: 0.8rem;
+  }
+}

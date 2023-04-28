@@ -1,0 +1,91 @@
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.search-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+
+.search-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border: none;
+  padding: 5px 15px;
+  background: #000000;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.search {
+  width: 100%;
+  font-size: 16px;
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+}
+
+.result {
+  width: inherit;
+}
+
+.title {
+  font-family: "Rubik", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  margin: 15px 0;
+  color: #000;
+  text-align: left;
+}
+
+.offers-wrapper {
+  width: inherit; /* set width to inherit from parent element */
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  overflow: hidden;
+  overflow-x: scroll;
+  padding: 10px 5px;
+  position: relative; /* add a position to the container to position pseudo-elements */
+}
+.offers-wrapper::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+/* Track */
+.offers-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.offers-wrapper::-webkit-scrollbar-thumb {
+  background: #31d84d;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+.offers-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #17b331;
+}
+
+.offers-wrapper .item {
+  min-width: 260px;
+  background: #fff;
+  padding: 10px;
+}
+
+.search:focus {
+  outline: 1px solid #31d84d;
+}
+

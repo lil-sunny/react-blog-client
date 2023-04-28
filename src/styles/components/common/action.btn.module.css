@@ -1,0 +1,35 @@
+/* action buttons */
+.action-btn {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  border-radius: 20px;
+  border: none;
+  background: #fff;
+  box-shadow: 1px 0px 6px 0px rgba(0, 0, 0, 0.1);
+  color: #b8b8b8;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.action-btn.blue {
+  background: #398cda;
+  color: #fff;
+}
+
+.action-btn:hover {
+  cursor: pointer;
+}
+
+.action-btn.active .icon {
+  color: #da1e1e;
+}
+
+.action-btn.active {
+  color: #000;
+}
+
+.value {
+  margin-right: 5px;
+}
